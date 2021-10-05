@@ -1,4 +1,4 @@
-[<img align="center" alt="dynamored.com" width="100%" src="https://dynamored.com/resources/branding/projects/bragi.png" />][website]
+[<img align="center" alt="dynamo.red" width="100%" src="https://dynamored.com/resources/branding/projects/bragi.png" />][website]
 
 ### Hi there, welcome on [Bragi Project][website] 👋
 
