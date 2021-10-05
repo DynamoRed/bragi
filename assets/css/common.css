@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #A4161A;
+    --secondary-color: #660708;
+
+    --background-color: #0B090A;
+    --black-color: #0B090A;
+    --white-color: #F5F3F4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+p a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid var(--primary-color);
+    transition: 0.4s;
+}
+
+p a:hover:after {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    border: var(--background-color) 2px solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--background-color);
+}
+
+img {
+    user-select: none;
+}
+
+img.icon {
+    width: 22px;
+    height: 22px;
+}
+
+body {
+    font-family: 'Geometria';
+    letter-spacing: 4%;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+::-moz-selection {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+::selection {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}

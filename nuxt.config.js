@@ -1,7 +1,9 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bragi',
+    title: 'Bragi | DynamoRed Url Shortener',
+    htmlAttrs: {
+      lang: 'fr'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -9,13 +11,20 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/fonts/fonts.css',
+    '~/assets/css/common.css',
+    '~/assets/css/keyframes.css',
   ],
+
+  server: {
+      port: 9879,
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -37,7 +46,10 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost',
+    browserBaseURL: 'http://localhost:9879',
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -46,7 +58,16 @@ export default {
     }
   },
 
+  router: {
+    middleware: ['redirection']
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  loading: {
+    color: '#BA181B',
+    height: '5px'
+  },
 }

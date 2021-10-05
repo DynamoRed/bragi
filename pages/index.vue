@@ -1,7 +1,16 @@
 <template>
-  <Tutorial/>
+    <main>
+        
+    </main>
 </template>
 
 <script>
-export default {}
+    export default {
+        layout: 'main',
+        middleware: 'vidhar'
+    }
 </script>
+
+<style lang="css" scoped>
+    
+</style>
