@@ -14,5 +14,17 @@
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "[<img align=\"center\" alt=\"dynamo.red\" width=\"100%\" src=\"https://dynamored.com/resources/branding/projects/bragi.png\" />][website]",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DynamoRed/bragi.git"
+  },
+  "author": "DynamoRed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DynamoRed/bragi/issues"
+  },
+  "homepage": "https://github.com/DynamoRed/bragi#readme"
 }
